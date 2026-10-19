@@ -3,7 +3,11 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
+  background-image: url("sfondo.jpg");
+background-size: cover;
+background-attachment: fixed;
 }
+
 
 h1 {
   color: darkblue;
