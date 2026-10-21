@@ -24,27 +24,47 @@
       color: #333333;
     }
 
-    /* Menu di navigazione */
+    /* Menu di navigazione e linea */
+    .header-nav {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
     .menu {
-      margin-bottom: 20px;
+      display: flex;
+      gap: 20px;
+      padding-bottom: 10px;
     }
 
     .menu a {
       color: #001871;
       text-decoration: none;
       font-weight: 600;
-      margin: 0 10px;
       font-size: 1.1rem;
+      padding-bottom: 5px;
     }
 
     .menu a:hover {
-      text-decoration: underline;
+      opacity: 0.8;
     }
 
-    /* Intestazione Principale */
-    header {
-      text-align: center;
-      margin-bottom: 25px;
+    /* Evidenzia la pagina attiva */
+    .menu a.attivo {
+      border-bottom: 3px solid #00a8e8;
+    }
+
+    /* Linea separatrice lunga */
+    .linea-separatore {
+      width: 100%;
+      height: 2px;
+      background-color: #001871;
+      opacity: 0.3;
+      border: none;
+      margin: 0 0 20px 0;
     }
 
     h1 {
@@ -52,12 +72,14 @@
       font-size: 2.5rem;
       margin: 0;
       font-weight: 700;
+      text-align: center;
     }
 
     .sottotitolo {
       color: #555555;
       font-size: 1.1rem;
       margin-top: 5px;
+      text-align: center;
     }
 
     /* Scheda Centrale Bianca */
@@ -73,13 +95,12 @@
 
     /* Titoli delle sezioni (Azzurro) */
     h2 {
-      color: #00a8e8; /* Colore azzurro */
+      color: #00a8e8;
       font-size: 1.5rem;
       margin-top: 20px;
       margin-bottom: 8px;
     }
 
-    /* Testi e Liste */
     p, li {
       color: #333333;
       font-size: 1rem;
@@ -114,7 +135,6 @@
       background-color: #0000cd;
     }
 
-    /* Pie di pagina */
     footer {
       margin-top: 30px;
       font-size: 0.85rem;
@@ -125,20 +145,17 @@
 </head>
 <body>
 
-  <!-- Menu Navigazione -->
-  <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="passioni.html">Le mie passioni</a>
-    <a href="sogno.html">Il mio sogno</a>
-  </nav>
-
-  <!-- Titolo della Home -->
-  <header>
+  <div class="header-nav">
+    <nav class="menu">
+      <a href="index.html" class="attivo">Home</a>
+      <a href="passioni.html">Le mie passioni</a>
+      <a href="sogno.html">Il mio sogno</a>
+    </nav>
+    <hr class="linea-separatore">
     <h1>Ciao, sono David Josh</h1>
     <p class="sottotitolo">Questo è il mio primo sito web.</p>
-  </header>
+  </div>
 
-  <!-- Contenuto principale -->
   <main class="scheda">
     <section>
       <h2>Chi sono</h2>
