@@ -4,29 +4,143 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Le mie passioni - David Josh</title>
-  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font "Poppins" da Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Stile generale e Sfondo */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #a3d5e6 0%, #68a0b0 100%);
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #333333;
+    }
+
+    /* Menu di navigazione e linea */
+    .header-nav {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+      padding-bottom: 10px;
+    }
+
+    .menu a {
+      color: #001871;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding-bottom: 5px;
+    }
+
+    .menu a:hover {
+      opacity: 0.8;
+    }
+
+    /* Evidenzia la pagina attiva */
+    .menu a.attivo {
+      border-bottom: 3px solid #00a8e8;
+    }
+
+    /* Linea separatrice lunga */
+    .linea-separatore {
+      width: 100%;
+      height: 2px;
+      background-color: #001871;
+      opacity: 0.3;
+      border: none;
+      margin: 0 0 20px 0;
+    }
+
+    h1 {
+      color: #001871;
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    /* Scheda Centrale Bianca */
+    .scheda {
+      background-color: #ffffff;
+      max-width: 600px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+    }
+
+    /* Titoli delle sezioni (Azzurro) */
+    h2 {
+      color: #00a8e8;
+      font-size: 1.5rem;
+      margin-top: 15px;
+      margin-bottom: 8px;
+    }
+
+    /* Testi */
+    p {
+      color: #333333;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Pie di pagina */
+    footer {
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #555555;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-  <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="passioni.html">Le mie passioni</a>
-    <a href="sogno.html">Il mio sogno</a>
-  </nav>
-
-  <h1>Le mie passioni</h1>
-
-  <div class="scheda">
-    <h2>La mia passione preferita: Il Pugilato</h2>
-    <p>
-      La mia passione è il pugilato, tutto è iniziato quando ho guardato una serie di nome I SEGUGI, che parla di due ragazzi che fanno boxe dove affrontano strozzini, truffatori ecc. Il pugilato mi piace molto perché volevo iniziare a proteggermi da solo in situazioni pericolose, e vorrei anche iniziare a fare pugilato, perché per ora faccio solo amatoriale.
-    </p>
-
-    <h2>La mia seconda passione: Mangiare tanto</h2>
-    <p>
-      La mia seconda passione preferita è mangiare tanto, perché io ogni giorno mangio tantissimo infatti ho bisogno di mangiare qualcosa ogni ora perché sennò muoio di fame.
-    </p>
+  <div class="header-nav">
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="passioni.html" class="attivo">Le mie passioni</a>
+      <a href="sogno.html">Il mio sogno</a>
+    </nav>
+    <hr class="linea-separatore">
+    <h1>Le mie passioni</h1>
   </div>
+
+  <main class="scheda">
+    <section>
+      <h2>La mia passione preferita: Il Pugilato</h2>
+      <p>
+        La mia passione è il pugilato, tutto è iniziato quando ho guardato una serie di nome I SEGUGI, che parla di due ragazzi che fanno boxe dove affrontano strozzini, truffatori ecc. Il pugilato mi piace molto perché volevo iniziare a proteggermi da solo in situazioni pericolose, e vorrei anche iniziare a fare pugilato, perché per ora faccio solo amatoriale.
+      </p>
+    </section>
+
+    <section>
+      <h2>La mia seconda passione: Mangiare tanto</h2>
+      <p>
+        La mia seconda passione preferita è mangiare tanto, perché io ogni giorno mangio tantissimo infatti ho bisogno di mangiare qualcosa ogni ora perché sennò muoio di fame.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Sito creato da me - 2026
+  </footer>
 
 </body>
 </html>
