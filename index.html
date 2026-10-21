@@ -4,27 +4,173 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>David Josh - Home</title>
-  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font "Poppins" da Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Stile generale e Sfondo */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #a3d5e6 0%, #68a0b0 100%);
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #333333;
+    }
+
+    /* Menu di navigazione */
+    .menu {
+      margin-bottom: 20px;
+    }
+
+    .menu a {
+      color: #001871;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 10px;
+      font-size: 1.1rem;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* Intestazione Principale */
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      color: #001871;
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .sottotitolo {
+      color: #555555;
+      font-size: 1.1rem;
+      margin-top: 5px;
+    }
+
+    /* Scheda Centrale Bianca */
+    .scheda {
+      background-color: #ffffff;
+      max-width: 600px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+    }
+
+    /* Titoli delle sezioni (Azzurro) */
+    h2 {
+      color: #00a8e8; /* Colore azzurro */
+      font-size: 1.5rem;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    /* Testi e Liste */
+    p, li {
+      color: #333333;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+
+    /* Pulsanti dei siti preferiti */
+    .pulsanti {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .btn {
+      background-color: #00008b;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #0000cd;
+    }
+
+    /* Pie di pagina */
+    footer {
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #555555;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Menu Navigazione -->
   <nav class="menu">
     <a href="index.html">Home</a>
     <a href="passioni.html">Le mie passioni</a>
     <a href="sogno.html">Il mio sogno</a>
   </nav>
 
-  <h1>Ciao, sono David Josh</h1>
-  <p>Questo è il mio primo sito web.</p>
+  <!-- Titolo della Home -->
+  <header>
+    <h1>Ciao, sono David Josh</h1>
+    <p class="sottotitolo">Questo è il mio primo sito web.</p>
+  </header>
 
-  <div class="scheda">
-    <h2>Chi sono</h2>
-    <p>Sono David Josh Argana.</p>
+  <!-- Contenuto principale -->
+  <main class="scheda">
+    <section>
+      <h2>Chi sono</h2>
+      <p>Sono david josh argana.</p>
+    </section>
 
-    <h2>I miei siti preferiti</h2>
-    <a href="https://it.wikipedia.org/wiki/Hardware" target="_blank">Cos'è l'hardware?</a>
-    <a href="https://it.wikipedia.org/wiki/Storia_del_computer" target="_blank">Storia del computer</a>
-  </div>
+    <section>
+      <h2>Le mie passioni</h2>
+      <ul>
+        <li>fare pugilato</li>
+        <li>Videogiochi</li>
+        <li>Musica e mangiare tanto</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Il mio sogno</h2>
+      <p>avere abbastanza soldi per il mio futuro, e avere una bella famiglia.</p>
+    </section>
+
+    <section>
+      <h2>I miei siti preferiti</h2>
+      <div class="pulsanti">
+        <a href="https://it.wikipedia.org/wiki/Hardware" target="_blank" class="btn">Cos'è l'hardware?</a>
+        <a href="https://it.wikipedia.org/wiki/Storia_del_computer" target="_blank" class="btn">storia del computer</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Sito creato da me - 2026
+  </footer>
 
 </body>
 </html>
